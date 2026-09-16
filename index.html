@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>karinto tools</title>
+<meta name="description" content="個人が自分専用に作っている小さなツール群のホームページ。">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #e2e2e2;
+    --accent: #2f6f4e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14151a;
+      --fg: #e8e8ea;
+      --muted: #9a9aa2;
+      --line: #2c2e36;
+      --accent: #7fc4a0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14151a;
+    --fg: #e8e8ea;
+    --muted: #9a9aa2;
+    --line: #2c2e36;
+    --accent: #7fc4a0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; letter-spacing: .01em; }
+  .sub { color: var(--muted); margin: 0 0 3rem; font-size: .95rem; }
+  h2 { font-size: 1.05rem; margin: 2.5rem 0 .75rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); }
+  ul.tools { list-style: none; padding: 0; margin: 0; }
+  ul.tools li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+  ul.tools li:last-child { border-bottom: none; }
+  .name { font-weight: 600; }
+  .desc { color: var(--muted); font-size: .92rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>karinto tools</h1>
+  <p class="sub">個人が自分専用に作っている小さなツール群です。一般配布はしていません。</p>
+
+  <h2>収録しているもの</h2>
+  <ul class="tools">
+    <li>
+      <div class="name">ytpl</div>
+      <div class="desc">YouTube の再生リストをコマンドラインから編集する CLI。</div>
+    </li>
+    <li>
+      <div class="name">gws (個人アカウント用の設定)</div>
+      <div class="desc">Google Workspace CLI を個人アカウントに対して使うための構成。</div>
+    </li>
+  </ul>
+
+  <h2>これらのアプリについて</h2>
+  <p>
+    いずれも作者本人が自分の Google アカウントに対して使うためのもので、
+    サーバーを持たず、作者の手元の端末でのみ動作します。
+    データの取り扱いは<a href="/privacy/">プライバシーポリシー</a>に記載しています。
+  </p>
+
+  <footer>
+    連絡先: karinto3219@gmail.com ／
+    <a href="/privacy/">プライバシーポリシー</a>
+  </footer>
+</main>
+</body>
+</html>
